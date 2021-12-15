@@ -10,17 +10,43 @@ Description : Stylesheet for the "Touhou sans forntière website"
 
 Remarque(s) : /////////////// ONLY REM UNIT ///////////////
               -Upload on gitpage
+              
               -Follow the specifc name class and ID
+              
               -Privilièger Flex
+
               -Variable pour couleur
+
+              -Présicer solution par SOL: nom de la solution
+
+TODO list : 
+            Dans l'ordre :
+            -Choose font
+            -Navbar
+            -Footer
+            -Section en plus ? 
+
+
+Lien Cool : upload du site : https://notdubss.github.io/
+
+            fontUsed : https://fonts.google.com/specimen/Readex+Pro?category=Sans+Serif
+            
+
+
 
 -----------------------------------------------------------------------------------
 */
+/* Import */
+
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+
 /* Css reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: "Readex", sans-serif;
 }
 
 /* Common class */
@@ -59,6 +85,17 @@ Remarque(s) : /////////////// ONLY REM UNIT ///////////////
 /* For the BOLD TEXT NAV */
 .nav-listitem:last-child {
   padding-right: 2rem;
+}
+
+/* A TAG */
+
+.link {
+  color: #000;
+  text-decoration: none;
+}
+
+.link:hover {
+  border-bottom: solid 4px #000;
 }
 
 /*////////////// ONLY REM UNIT //////////////*/
