@@ -11,6 +11,8 @@ Description : Stylesheet for the "Touhou sans forntière website"
 Remarque(s) : /////////////// ONLY REM UNIT ///////////////
               -Upload on gitpage
               -Follow the specifc name class and ID
+              -Privilièger Flex
+              -Variable pour couleur
 
 -----------------------------------------------------------------------------------
 */
@@ -29,8 +31,34 @@ Remarque(s) : /////////////// ONLY REM UNIT ///////////////
   font-size: 3rem;
 }
 
+/* Bold text nav style */
+.stl-h3-2 {
+  padding-left: 1rem;
+  font-size: 3rem;
+}
+
 .center-text {
   text-align: center;
+}
+
+.nav-ulist {
+  list-style: none;
+
+  /* Align the list item horizontally */
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.nav-listitem {
+  font-size: 2.5rem;
+
+  padding-left: 2rem;
+}
+
+/* For the BOLD TEXT NAV */
+.nav-listitem:last-child {
+  padding-right: 2rem;
 }
 
 /*////////////// ONLY REM UNIT //////////////*/
@@ -38,10 +66,51 @@ Remarque(s) : /////////////// ONLY REM UNIT ///////////////
 /* Navbar */
 
 #navbar {
+  /* height: 20%; if navbar */
   height: 10%;
   width: 100%;
 
-  background-color: pink;
+  background-color: blanchedalmond;
+}
+
+.navbarWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  /* align itmes in the middle of the container
+     on the X axe */
+  align-items: center;
+
+  /* For the BOLD TEXT NAV */
+  /* Make the menu on the side of the screen */
+  justify-content: space-between;
+}
+
+/* Sol1 : tradional logo center and menu next to */
+
+/*.navbarElement {
+  /* The flex element will all have the same size 
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.nav-ulist {
+  list-style: none;
+
+  /* Align the list item horizontally 
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.nav-listitem {
+  font-size: 2.5rem;
+} */
+
+/* sol2 : bold text + side menu */
+.boldtext-container {
+  align-self: center;
 }
 
 /* Footer */
