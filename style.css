@@ -1,0 +1,54 @@
+/*
+-----------------------------------------------------------------------------------
+Nom du fichier : Style.css
+
+Auteur(s) : Not_Morgan
+
+Date creation : 15.12.2021
+
+Description : Stylesheet for the "Touhou sans forntière website"
+
+Remarque(s) : /////////////// ONLY REM UNIT ///////////////
+              -Upload on gitpage
+              -Follow the specifc name class and ID
+
+-----------------------------------------------------------------------------------
+*/
+/* Css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common class */
+/* use-tag-designation */
+/* Exemple : stl-h3-1 = style for h3 choice 1 */
+.stl-h3-1 {
+  padding-top: 0.5rem;
+  font-size: 3rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/*////////////// ONLY REM UNIT //////////////*/
+
+/* Navbar */
+
+#navbar {
+  height: 10%;
+  width: 100%;
+
+  background-color: pink;
+}
+
+/* Footer */
+
+#footer {
+  height: 10%;
+  width: 100%;
+
+  background-color: purple;
+}
