@@ -30,6 +30,35 @@ function initMap() {
     center: tokyoBigS,
   });
 
+  // Here html snippet
+  const tokyoBigSinfo =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading">Tokyo big sight</h1>' +
+    '<div id="bodyContent">' +
+    "<p><b>Tokyo Big Sight</b>, officially known as <b>Tokyo International Exhibition Center</b>, is a convention and exhibition center " +
+    " in Tokyo, Japan, and the largest one in the country. Opened in April 1996 " +
+    " the center is located in the Ariake Minami district of Tokyo Waterfront City" +
+    " Its most iconic feature is the visually distinctive Conference Tower.  " +
+    " The name Tokyo Big Sight in Japanese eventually became the official namem </p>";
+  +'<p>Attribution: Tokyo Big Sight, <a href="https://en.wikipedia.org/wiki/Tokyo_Big_Sight">' +
+    "wiki Page</a></p> " +
+    "</div>" +
+    "</div>";
+
+  const neuchinfo =
+    '<img src="https://cdn-106.anonfiles.com/1cX8W7Cav0/4ce0eb18-1639562545/webcamhead.jpg" alt="Anime wat" width="500" height="600">';
+
+  //Put the windows info
+  const infowindowTs = new google.maps.InfoWindow({
+    content: tokyoBigSinfo,
+  });
+
+  const infowindowNe = new google.maps.InfoWindow({
+    content: neuchinfo,
+  });
+
   //Put the marker
 
   const markerTs = new google.maps.Marker({
@@ -39,5 +68,23 @@ function initMap() {
   const markerNe = new google.maps.Marker({
     position: neuchatel,
     map: map,
+  });
+
+  // Open on click
+
+  markerTs.addListener("click", () => {
+    infowindowTs.open({
+      anchor: markerTs,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  markerNe.addListener("click", () => {
+    infowindowNe.open({
+      anchor: markerNe,
+      map,
+      shouldFocus: false,
+    });
   });
 }
