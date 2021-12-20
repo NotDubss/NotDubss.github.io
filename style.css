@@ -130,6 +130,7 @@ Lien Cool : upload du site : https://notdubss.github.io/
   border-radius: 4px;
 }
 
+x
 /*////////////// ONLY REM AND % UNIT //////////////*/
 
 /* Navbar */
@@ -184,11 +185,8 @@ Lien Cool : upload du site : https://notdubss.github.io/
 
 /* Section Explaination */
 #resume {
-  height: 90%;
-}
-
-.resumeWrapper {
   background-color: blanchedalmond;
+  height: 90%;
 }
 
 .resume-container {
@@ -202,14 +200,19 @@ Lien Cool : upload du site : https://notdubss.github.io/
 }
 
 .resume-content {
+  display: flex;
+  flex: 1 1 0px;
   margin: 0 auto;
   /* border: solid 3px red; */
 }
 
-.img-dia {
-  padding: 30px;
-  object-fit: contain;
+/* Submitt button */
+.submitButton {
+  background-color: blanchedalmond;
+  height: 10%;
+  padding-bottom: 4rem;
 }
+/* Sale */
 
 /* Footer */
 

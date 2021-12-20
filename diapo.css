@@ -1,0 +1,60 @@
+.diapo {
+  height: 500px;
+  width: 500px;
+  /* Tout se qui dépasse 80% est coupé */
+  position: relative;
+  overflow: hidden;
+
+  margin: 50px 150px 150px 150px;
+}
+
+#nav-droite,
+#nav-gauche {
+  /* Les placer par approt au diapo */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 4rem;
+}
+
+/* positioner à droite et à gauche */
+#nav-droite {
+  right: 20px;
+}
+
+#nav-gauche {
+  left: 20px;
+}
+
+.elements {
+  display: flex;
+  transition: 1s linear;
+}
+
+.element {
+  /* 1 place max 0 minm s'étendre à 100% du parent */
+  flex: 1 0 100%;
+  position: relative;
+}
+
+.element > img {
+  /* For the flexbox to work */
+  width: 100%;
+  height: 100%;
+}
+
+.cap {
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  /* Text in the middle */
+  transform: translate(-50%, -15%);
+
+  text-align: left;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  padding: 20px;
+}
