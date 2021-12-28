@@ -52,6 +52,13 @@ Lien Cool : upload du site : https://notdubss.github.io/
 /* Common class */
 /* use-tag-designation */
 /* Exemple : stl-h3-1 = style for h3 choice 1 */
+
+.stl-h2-1 {
+  padding: 1.5rem;
+
+  font-size: 1.5rem;
+}
+
 .stl-h3-1 {
   font-size: 3rem;
 
@@ -69,7 +76,7 @@ Lien Cool : upload du site : https://notdubss.github.io/
 .stl-p-1 {
   text-align: justify;
 
-  padding: 3rem;
+  padding: 1.5rem;
 
   font-size: 1.5rem;
 }
@@ -187,7 +194,7 @@ x
 #resume {
   display: none;
   background-color: blanchedalmond;
-  height: 90%;
+  height: 110%;
 }
 
 .resume-container {
@@ -205,6 +212,10 @@ x
   flex: 1 1 0px;
   margin: 0 auto;
   /* border: solid 3px red; */
+}
+
+.artist-bio {
+  padding: 3rem;
 }
 
 /* Submitt button */

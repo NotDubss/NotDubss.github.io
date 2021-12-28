@@ -25,11 +25,13 @@ function initMap() {
 
   const neuchatel = { lat: 46.99, lng: 6.9293 };
 
+  const aiguesmortes = { lat: 43.56, lng: 4.18 };
+
   //Center the map @ sight
 
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
-    center: tokyoBigS,
+    center: aiguesmortes,
   });
 
   // Here html snippet
@@ -71,12 +73,14 @@ function initMap() {
     position: neuchatel,
     map: map,
   });
+  const markerAiguesMortes = new google.maps.Marker({
+    position: aiguesmortes,
+    map: map,
+  });
 
   // Open on click
 
   markerTs.addListener("click", () => {
-    resume.style.display = "block";
-
     infowindowTs.open({
       anchor: markerTs,
       map,
@@ -90,5 +94,9 @@ function initMap() {
       map,
       shouldFocus: false,
     });
+  });
+
+  markerAiguesMortes.addListener("click", () => {
+    resume.style.display = "block";
   });
 }
