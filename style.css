@@ -137,7 +137,7 @@ x
 
 #navbar {
   /* height: 20%; if navbar */
-  height: 10%;
+  height: 30%;
   width: 100%;
 
   background-color: blanchedalmond;
@@ -185,6 +185,7 @@ x
 
 /* Section Explaination */
 #resume {
+  display: none;
   background-color: blanchedalmond;
   height: 90%;
 }

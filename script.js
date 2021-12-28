@@ -19,6 +19,8 @@
 //toyko Exemple
 
 function initMap() {
+  const resume = document.querySelector("#resume");
+
   const tokyoBigS = { lat: 35.631, lng: 139.797 };
 
   const neuchatel = { lat: 46.99, lng: 6.9293 };
@@ -73,6 +75,8 @@ function initMap() {
   // Open on click
 
   markerTs.addListener("click", () => {
+    resume.style.display = "block";
+
     infowindowTs.open({
       anchor: markerTs,
       map,
