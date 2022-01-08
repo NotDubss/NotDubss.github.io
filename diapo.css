@@ -1,11 +1,11 @@
 .diapo {
-  height: 1500px;
+  height: auto;
   width: 500px;
   /* Tout se qui dépasse 80% est coupé */
   position: relative;
   overflow: hidden;
 
-  margin: 50px 150px 150px 150px;
+  margin: 50px 150px 50px 150px;
 }
 
 #nav-droite,

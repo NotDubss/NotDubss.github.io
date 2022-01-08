@@ -49,14 +49,24 @@ Lien Cool : upload du site : https://notdubss.github.io/
   font-family: "Readex", sans-serif;
 }
 
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 /* Common class */
 /* use-tag-designation */
 /* Exemple : stl-h3-1 = style for h3 choice 1 */
 
 .stl-h2-1 {
-  padding: 1.5rem;
+  text-align: left;
 
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .stl-h3-1 {
@@ -83,8 +93,6 @@ Lien Cool : upload du site : https://notdubss.github.io/
 
 .stl-p-2 {
   text-align: center;
-
-  padding: 3rem;
 
   font-size: 2rem;
 }
@@ -194,7 +202,7 @@ x
 #resume {
   display: none;
   background-color: blanchedalmond;
-  height: 110%;
+  height: 100%;
 }
 
 .resume-container {
@@ -214,8 +222,14 @@ x
   /* border: solid 3px red; */
 }
 
+.resume-content:last-child {
+  border: 3px solid #000;
+  border-radius: 5px;
+}
+
 .artist-bio {
   padding: 3rem;
+  margin-top: 2rem;
 }
 
 /* Submitt button */
@@ -229,8 +243,50 @@ x
 /* Footer */
 
 #footer {
-  height: 10%;
+  height: 20%;
   width: 100%;
 
   background-color: blanchedalmond;
+}
+
+.footerWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  padding: 2rem;
+
+  font-size: 1.2rem;
+}
+
+/* .footer-content:last-child {
+  padding-right: 2rem;
+}
+
+.footer-content:last-child > h2 {
+  font-size: 1rem;
+  padding: 0.3rem;
+} */
+
+.footerSocialIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.footerSocialIcon > li {
+  padding-right: 0.5rem;
+
+  font-size: 2rem;
+}
+
+.footerSocialIcon a {
+  color: #000;
+}
+
+#footer h2 {
+  padding-bottom: 1rem;
+  color: black;
 }
