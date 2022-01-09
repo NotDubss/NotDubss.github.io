@@ -49,6 +49,10 @@ Lien Cool : upload du site : https://notdubss.github.io/
   font-family: "Readex", sans-serif;
 }
 
+body {
+  background-color: blanchedalmond;
+}
+
 a,
 a:link,
 a:visited {
@@ -82,6 +86,13 @@ li {
   padding-left: 1rem;
 }
 
+.stl-h3-3 {
+  text-align: center;
+
+  font-size: 3rem;
+  color: #000;
+}
+
 /* Text in the resume */
 .stl-p-1 {
   text-align: justify;
@@ -95,6 +106,17 @@ li {
   text-align: center;
 
   font-size: 2rem;
+}
+
+.stl-p-3 {
+  text-align: justify;
+
+  padding: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  color: #000;
+  font-size: 1.5rem;
 }
 
 .center-text {
@@ -128,6 +150,12 @@ li {
   text-decoration: none;
 }
 
+.link-stl-1 {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .link:hover {
   border-bottom: solid 4px #000;
 }
@@ -135,27 +163,36 @@ li {
 /* BTN */
 
 .btn-apply {
-  background: rgb(0, 0, 0);
+  background: rgb(197, 0, 0);
   color: #fff;
-
   font-size: 2rem;
+  text-align: center;
 
+  width: 20%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px;
+
   border: solid 4px #000;
-  border-radius: 4px;
+  border-radius: 0 20px 0 20px;
 }
 
-x
+/*////////////// ACTIVE CLASS //////////////*/
+
+.active-link {
+  border-bottom: solid 4px #000;
+}
+
 /*////////////// ONLY REM AND % UNIT //////////////*/
 
 /* Navbar */
 
 #navbar {
   /* height: 20%; if navbar */
-  height: 30%;
+  height: 10%;
   width: 100%;
-
-  background-color: blanchedalmond;
 }
 
 .navbarWrapper {
@@ -172,27 +209,6 @@ x
   justify-content: space-between;
 }
 
-/* Sol1 : tradional logo center and menu next to */
-
-/*.navbarElement {
-  /* The flex element will all have the same size 
-  flex-basis: 100%;
-  text-align: center;
-}
-
-.nav-ulist {
-  list-style: none;
-
-  /* Align the list item horizontally 
-  display: flex;
-
-  justify-content: space-evenly;
-}
-
-.nav-listitem {
-  font-size: 2.5rem;
-} */
-
 /* sol2 : bold text + side menu */
 .boldtext-container {
   align-self: center;
@@ -201,7 +217,6 @@ x
 /* Section Explaination */
 #resume {
   display: none;
-  background-color: blanchedalmond;
   height: 100%;
 }
 
@@ -234,7 +249,6 @@ x
 
 /* Submitt button */
 .submitButton {
-  background-color: blanchedalmond;
   height: 10%;
   padding-bottom: 4rem;
 }
@@ -243,10 +257,8 @@ x
 /* Footer */
 
 #footer {
-  height: 20%;
+  height: 15%;
   width: 100%;
-
-  background-color: blanchedalmond;
 }
 
 .footerWrapper {
@@ -261,15 +273,6 @@ x
 
   font-size: 1.2rem;
 }
-
-/* .footer-content:last-child {
-  padding-right: 2rem;
-}
-
-.footer-content:last-child > h2 {
-  font-size: 1rem;
-  padding: 0.3rem;
-} */
 
 .footerSocialIcon {
   display: flex;
@@ -289,4 +292,23 @@ x
 #footer h2 {
   padding-bottom: 1rem;
   color: black;
+}
+
+/*////////////// CONTRIBUTE.HTML //////////////*/
+
+#contribute {
+  height: 60%;
+  width: 100%;
+
+  padding-top: 5rem;
+}
+
+.contribute-content {
+  width: 80%;
+
+  border-radius: 30px 0 30px 0;
+  border: 4px #000 solid;
+
+  margin: 0 auto;
+  padding: 3rem;
 }
